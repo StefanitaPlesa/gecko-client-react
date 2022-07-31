@@ -5,11 +5,11 @@ const instance = axios.create({
     headers: { 'Accept': 'application/json' }
 })
 
-const getcoinsMarkets = async () => {
+const getCoinsMarkets = async () => {
     return await instance.get('/coins/markets?vs_currency=eur&order=market_cap_desc')
 } //aici vine un promise
 
-export { getcoinsMarkets }
+export { getCoinsMarkets }
 
   
 
